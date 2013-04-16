@@ -27,7 +27,7 @@ mmh3_hash(PyObject *self, PyObject *args, PyObject *keywds)
     const char *target_str;
     int target_str_len;
     uint32_t seed = 0;
-    int32_t result[1];
+    uint32_t result[1];
 
     static char *kwlist[] = {(char *)"key", (char *)"seed", NULL};
 
@@ -50,7 +50,7 @@ mmh3_hash64(PyObject *self, PyObject *args, PyObject *keywds)
     const char *target_str;
     int target_str_len;
     uint32_t seed = 0;
-    int64_t result[2];
+    uint64_t result[2];
     char x64arch = 1;
 
     static char *kwlist[] = {(char *)"key", (char *)"seed",
